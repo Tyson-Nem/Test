@@ -8,10 +8,19 @@ try {
         userConnect();
     } else {
         if (isset($_GET['action'])) {
-            if ($_GET['action'] == 'listTables') {
-                listTables();
-            } elseif ($_GET['action'] == 'userParam') {
-                userParam();
+            switch ($_GET['action']) {
+                case 'listTables':
+                    listTables();
+                    break;
+                case 'userParam':
+                    userParam();
+                    break;
+                case 'deconnexion':
+                    deconnexion();
+                    break;
+                case 'userParam':
+                    userParam();
+                    break;
             }
         } else {
             listTables();

@@ -9,9 +9,9 @@ class User
     private string $password;
     private string $name;
     private string $firstname;
-    private string $photo =  'assets/images/default_user.jpg';
+    private string $photo =  'assets/images/default_user.png';
 
-    public function __construct(?string $mail = '', ?string $password = '', ?string $name = '', ?string $firstname = '', ?string $photo = '')
+    public function __construct(?string $mail = '', ?string $password = '', ?string $name = '', ?string $firstname = '', ?string $photo = 'assets/images/default_user.png')
     {
         $this->mail = $mail;
         $this->password = $password;
@@ -254,7 +254,6 @@ class User
                      prenom = :firstname,
                      photo = :photo 
                      where id =' . $this->getId());
-                echo "Mis à jour effectué";
             } else {
                 if ($this->checkUser($this->getMail())) {
                     print "Cet email a déjà été utilisé" . PHP_EOL;

@@ -1,0 +1,87 @@
+/*Reset CSS*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&family=Signika&display=swap');
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Signika', sans-serif;
+*/
+
+#bann{
+    background-color: #1E2D40;
+    width: 100vw;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+#bann + section {
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    align-items: flex-start;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px 20px 0px 20px;
+}
+
+#afaire, #encours, #fini {
+    background: #F1D6A1;
+    border-radius: 5px;
+    margin: 50px;
+    width: 300px;
+   
+}
+
+#fini + input, #afaire input, #encours input, #fini input {
+    margin: 50px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    background: none;
+    border: #1E2D40 solid 3px;
+    border-radius: 5px;
+}
+
+#afaire input, #encours input, #fini input {
+    background-color: white;
+}
+
+#fini + input:hover, #afaire input:hover, #encours input:hover, #fini input:hover {
+    background: #1E2D40;
+    border: #1E2D40 3px solid;
+    color: white;
+    transition: 0.5s;
+}
+
+#afaire div, #encours div, #fini div {
+    margin: 20px;
+    background-color: white;
+    border: 3px solid #1E2D40;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+#afaire div:hover, #encours div:hover, #fini div:hover {
+    background-color: #1E2D40;
+    transition: 0.5s;
+}
+
+#afaire div p, #encours div p, #fini div p {
+    font-family: 'Open Sans', sans-serif;
+    color: #1E2D40;
+}
+

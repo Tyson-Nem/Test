@@ -24,6 +24,8 @@
 
         <label for="firstname"></label>
         <input type="text" name="firstname" placeholder="Prénom" value="<?= $user->getFirstname(); ?>" />
+
+        <input id="button" type="submit" value="Enregistrer les modifications" name="modif">
     </form>
 
     <div>
@@ -32,9 +34,7 @@
     </div>
 </section>
 
-<button type="submit" value="Enregistrer les modifications" name="modif">
-    Enregistrer les modifications
-</button>
+
 
 <?php
 $content = ob_get_clean();

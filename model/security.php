@@ -18,6 +18,7 @@ function connexion(string $mail, string $password): bool
 function deconnexion(): bool
 {
     session_destroy();
+    header('Location: index.php');
     return true;
 }
 

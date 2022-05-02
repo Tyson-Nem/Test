@@ -79,10 +79,11 @@ section{
     margin: 50px 0px;
 }
 
-button {
+#button {
+    margin: 0;
+    padding: 0;
     margin-top: 40px;
     font-size: 1rem;
-    padding: 10px 5px;
     align-self: center;
     background: none;
     border: #1E2D40 solid 3px;
@@ -97,7 +98,7 @@ button {
     background: none;
 }
 
-button:hover {
+#button:hover {
     background: #D8843B;
     border: #D8843B 3px solid;
     color: white;
