@@ -1,6 +1,8 @@
 <?php $title = 'Paramètres' ?>
 <?php $css = 'assets/css/param.css'; ?>
 
+<?php ob_start(); ?>
+
 <div id="bann">
     <h1>Paramètres</h1>
 </div>
@@ -33,3 +35,8 @@
 <button type="submit" value="Enregistrer les modifications" name="modif">
     Enregistrer les modifications
 </button>
+
+<?php
+$content = ob_get_clean();
+require('view/template.php');
+?>
