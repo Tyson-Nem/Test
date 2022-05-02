@@ -36,7 +36,7 @@
                     } ?>
         <div>
             <div class="projet"></div>
-            <p><?= $data['nom_tableau']; ?></p>
+            <p><?= htmlspecialchars($data['nom_tableau']); ?></p>
         </div>
         <?php } ?>
     </div><?php

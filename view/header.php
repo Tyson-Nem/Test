@@ -6,7 +6,7 @@
 
     <nav>
         <ul>
-            <li><a href="#" id="accueil">Accueil</a></li>
+            <li><a href="index.php" id="accueil">Accueil</a></li>
             <li class="deroulant">
                 <a href="#"><img src="assets/images/default_user.png" alt="" id="profil" /></a>
                 <ul class="sous">

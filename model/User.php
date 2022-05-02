@@ -256,7 +256,7 @@ class User
                      where id =' . $this->getId());
             } else {
                 if ($this->checkUser($this->getMail())) {
-                    print "Cet email a déjà été utilisé" . PHP_EOL;
+                    throw new Exception("Cet email a déjà été utilisé");
                     exit;
                 }
                 $statement = $dbh->prepare("INSERT INTO utilisateur (id, email, password, nom, prenom, photo) VALUES (NULL, :email, :password, :name, :firstname, :photo)");

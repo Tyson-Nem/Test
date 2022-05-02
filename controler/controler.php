@@ -12,9 +12,7 @@ function userConnect()
         if (connexion($_POST['mail'], $_POST['password'])) {
             header('Location: index.php?action=listTables');
         } else {
-            echo '<script type="text/javascript">
-                alert("Le mot de passe ou email invalide");
-         </script>';
+            throw new Exception('Mot de passe ou email invalide');
         }
     } elseif (isset($_POST['create'])) {
         if ($_POST['password'] === $_POST['repassword']) {
@@ -23,9 +21,7 @@ function userConnect()
             connexion($user->getMail(), $user->getPassword());
             header('Location: index.php?action=listTables');
         } else {
-            echo '<script type="text/javascript">
-                alert("Les mots de passe ne correspondent pas");
-         </script>';
+            throw new Exception('Les mots de passe ne correspondent pas');
         }
     }
 
@@ -66,9 +62,7 @@ function userParam()
             $userTemp->save();
             header('Location: index.php?action=userParam');
         } else {
-            echo '<script type="text/javascript">
-                alert("Les mots de passe ne correspondent pas");
-         </script>';
+            throw new Exception('Les mots de passe ne correspondent pas');
         }
     }
 
