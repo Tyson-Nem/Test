@@ -1,0 +1,105 @@
+/*Reset CSS*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&family=Signika&display=swap');
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Signika', sans-serif;
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#bann{
+    background-color: #1E2D40;
+    width: 100vw;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+#photo {
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-top: 30px;
+    height: 30px;
+    background: none;
+    border: #1E2D40 solid 3px;
+    border-top: none;
+    border-right: none;
+    padding: 10px;
+    border-radius: 0 0 0 5px;
+    width: 300px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form input::placeholder{
+    color: #D8843B;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form input:focus {
+    border: #1E2D40 solid 3px;
+    border-radius: 5px;
+}
+
+form + div {
+    text-align: -webkit-center;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+button {
+    margin-top: 40px;
+    font-size: 1rem;
+    padding: 10px 5px;
+    align-self: center;
+    background: none;
+    border: #1E2D40 solid 3px;
+    border-radius: 5px;
+}
+
+#photo + input {
+    margin-top: 40px;
+    font-size: 1rem;
+    padding: 10px 5px;
+    align-self: center;
+    background: none;
+}
+
+button:hover {
+    background: #D8843B;
+    border: #D8843B 3px solid;
+    color: white;
+    transition: 0.5s;
+}

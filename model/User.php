@@ -11,12 +11,13 @@ class User
     private string $firstname;
     private string $photo =  'assets/images/default_user.jpg';
 
-    public function __construct(?string $mail = '', ?string $password = '', ?string $name = '', ?string $firstname = '')
+    public function __construct(?string $mail = '', ?string $password = '', ?string $name = '', ?string $firstname = '', ?string $photo = '')
     {
         $this->mail = $mail;
         $this->password = $password;
         $this->name = $name;
         $this->firstname = $firstname;
+        $this->photo = $photo;
     }
 
     #region SETTER & GETTER

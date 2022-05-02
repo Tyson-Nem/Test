@@ -10,6 +10,8 @@ try {
         if (isset($_GET['action'])) {
             if ($_GET['action'] == 'listTables') {
                 listTables();
+            } elseif ($_GET['action'] == 'userParam') {
+                userParam();
             }
         } else {
             listTables();

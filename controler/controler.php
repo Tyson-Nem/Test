@@ -52,6 +52,23 @@ function listTables()
     require('view/pageAccueil.php');
 }
 
+function userParam()
+{
+    $user = getUser();
+    if (isset($_POST['create'])) {
+        if ($_POST['password'] === $_POST['repassword']) {
+            $userTemp = new User($_POST['mail'], $_POST['password'], $_POST['name'], $_POST['firstname'], $_POST['photo']);
+            $userTemp->setId($user->getId());
+            $userTemp->save();
+            header('Location: index.php?action=userParam');
+        } else {
+            echo "Les mots de passe ne correspondent pas.";
+        }
+    }
+
+    require('view/pageParametre.php');
+}
+
 // function post()
 // {
 //     $postManager = new PostManager();
