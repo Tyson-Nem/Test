@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&family=Signika&display=swap');
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Signika', sans-serif;
+*/
+
+body {
+    overflow-x: hidden;
+}
+
+#bann{
+    background-color: #1E2D40;
+    width: 100vw;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+
+h1 + p {
+    color: white;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#bann + form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 50px;
+    width: 250px;
+    align-self: center;
+}
+
+#bann + form input {
+    margin-bottom: 30px;
+    height: 1.5rem;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+
+#bann + form button {
+    font-size: 1rem;
+    padding: 10px 5px;
+    background: #D8843B;
+    border: #D8843B 3px solid;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#bann + form button:hover {
+    background: white;
+    border: #D8843B 3px solid;
+    color: #D8843B;
+    transition: 0.5s;
+}
+
+#loosh {
+    display: flex;
+    justify-content: center;
+}
+
+#loosh p {
+    font-family: 'Open Sans', sans-serif;
+    color: #1E2D40;
+}
+
+hr {
+    width: 800px;
+    border: none;
+    border-top: 3px solid #D8843B;
+    color: #D8843B;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    margin: 10px;
+}
+
+.dossprojet {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.projet {
+    width: 200px;
+    height: 150px;
+    background-color: rebeccapurple;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.projet + p {
+    font-family: 'Open Sans', sans-serif;
+    color:#1E2D40 ;
+}
