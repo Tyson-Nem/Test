@@ -32,7 +32,7 @@ function listTables()
 {
     $citation = array("Loosh, là où les mamans vont !", "Loosh pour tous.", "Loosh, savoure chaque gorgée.", "Goûte la Loosh.", "Entre dans ma Loosh.", "Loosh. C'est partout où tu veux être.", "Loosh pour l'éternité.", "Tendu ? Stressé ? Essaie Loosh.", "Profondément Loosh.", "Loosh, ressens la sensation de bien-être au plus profond de toi.", "Avez-vous pris votre Loosh aujourd'hui ?", "Ne joue pas avec le feu, joue avec Louche.", "Loosh, spécialement pour elle.", "J'ai arrêté de fumer grâce à Loosh.");
     $rand_keys = array_rand($citation, 1);
-    $poetes = array("Hervé Crevan", "Socrate", "Spiderman", "Maman", "Rocco Siffredi", "Clara Morgane", "Jean-Claude Van Damme", "Ton arrière grand-père, le chauve");
+    $poetes = array("Hervé Crevan", "Socrate", "Spiderman", "Maman", "Rocco Siffredi", "Clara Morgane", "Jean-Claude Van Damme", "Chuck Norris");
     $p_rand_keys = array_rand($poetes, 1);
 
     $tableauManager = new TableauManager(); // Création d'un objet
@@ -40,7 +40,7 @@ function listTables()
 
     if (isset($_POST['submit'])) {
         if ($tableauManager->createTable($user->getId(), $_POST['name'])) {
-            header('Location: index.php?action=Table');
+            header('Location: index.php?action=listTables');
         } else {
             echo 'Création impossible';
         }
@@ -68,28 +68,3 @@ function userParam()
 
     require('view/pageParametre.php');
 }
-
-// function post()
-// {
-//     $postManager = new PostManager();
-//     $commentManager = new CommentManager();
-
-//     $post = $postManager->getPost($_GET['id']);
-//     $comments = $commentManager->getComments($_GET['id']);
-
-//     require('view/postView.php');
-// }
-
-// function addComment($postId, $author, $comment)
-// {
-//     $commentManager = new CommentManager();
-
-//     $affectedLines = $commentManager->postComment($postId, $author, $comment);
-
-//     if ($affectedLines === false) {
-//         throw new Exception('Impossible d\'ajouter le commentaire !');
-//     }
-//     else {
-//         header('Location: index.php?action=post&id=' . $postId);
-//     }
-// }

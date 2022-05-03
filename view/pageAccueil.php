@@ -34,10 +34,10 @@
                         $bool = false;
                         break;
                     } ?>
-        <div>
+        <a href="#">
             <div class="projet"></div>
             <p><?= htmlspecialchars($data['nom_tableau']); ?></p>
-        </div>
+        </a>
         <?php } ?>
     </div><?php
                 }
