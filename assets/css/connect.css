@@ -1,0 +1,140 @@
+/*Reset CSS*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&family=Signika&display=swap');
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Signika', sans-serif;
+*/
+
+/*Body*/
+
+body {
+    background-image: url("../images/fond_connexion.png");
+    width: 100vw;
+    height: 60vh;
+}
+
+/*Formulaires*/
+
+section:first-child{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 85vw;
+    height: 85vh;
+    margin: auto;  
+    margin-top: 40vh;
+    transform: translateY(-40%);
+}
+
+h1 {
+    font-family: 'Signika', sans-serif;
+    color: #D8843B;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2.5rem;
+    margin: 30px 0px;
+}
+
+#sec {
+    display:flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.form{
+    padding: 50px;
+    width: 40vw;
+    text-align: center;
+}
+
+.form:first-child{
+    border-right: #1E2D40 solid 3px;
+}
+
+.form:last-child{
+    border-left: #1E2D40 solid 3px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color:#1E2D40;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+}
+
+
+form input {
+    margin-top: 30px;
+    height: 30px;
+    background: none;
+    border: #1E2D40 solid 3px;
+    border-top: none;
+    border-right: none;
+    padding: 10px;
+    border-radius: 0 0 0 5px;
+    width: 400px;
+}
+
+form input::placeholder{
+    color: #D8843B;
+}
+
+form input:focus {
+    border: #1E2D40 solid 3px;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 40px;
+    font-size: 1rem;
+    padding: 10px 5px;
+    width: 140px;
+    align-self: center;
+    background: none;
+    border: #1E2D40 solid 3px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #D8843B;
+    border: #D8843B 3px solid;
+    color: white;
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: #D8843B;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+/*Image*/
+
+div:last-of-type{
+    text-align: center;
+}
